@@ -71,7 +71,7 @@ final class KCTHSolfegeAuth extends KCTHSolfege
 			switch(self::$auth_KEY)
 			{
 				case 'Auth':
-					$req = $bdd->query("SELECT * FROM px_fact_utilisateur WHERE util_id = {$auth_VALUE}");
+					$req = $bdd->query("SELECT * FROM utilisateur WHERE util_id = {$auth_VALUE}");
 					return $req->fetchAll(\PDO::FETCH_CLASS, 'app\model\user\UserModel')[0];
 			}
 
