@@ -1,0 +1,10 @@
+{
+    "require": {
+        "phroute/phroute": ""
+    },
+    "autoload": {
+        "psr-4": {
+            "KCTH\\Solfege\\": "Solfege/"
+        }
+    }
+}
